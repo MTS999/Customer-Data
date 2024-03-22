@@ -12,14 +12,15 @@ function Routess() {
 
     <Routes>
       <Route path='/' element={<Sidenav1 />} >
-        <Route path='dashboard' element={<Dashboard/>}  />
+        <Route index element={<Dashboard/>}  />
         <Route path='customer' element={<Customer/>}  />
 
     
 
       </Route>
 
-      {/* <Route path='/' element={<AddCustomer />} /> */}
+      <Route path='/login' element={<Login />} />
+      <Route path='/signup' element={<Signup />} />
 
 
     </Routes>
